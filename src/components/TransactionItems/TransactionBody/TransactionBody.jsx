@@ -14,7 +14,7 @@ function TransactionBody({ type, amount, currency }) {
 
 TransactionBody.propTypes = {
   type: PropTypes.string,
-  amount: PropTypes.number,
+  amount: PropTypes.string,
   currency: PropTypes.string,
 };
 
