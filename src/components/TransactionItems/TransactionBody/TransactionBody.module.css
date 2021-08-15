@@ -1,0 +1,8 @@
+.tdBody {
+  color: #818386;
+  padding: 5px 0;
+}
+
+.tdBody:not(:last-child) {
+  border-right: 1px solid #e4e4e4;
+}
