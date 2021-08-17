@@ -3,7 +3,7 @@ import user from '../src/user.json';
 import style from './App.module.css';
 
 import Statistics from './components/Statistics/Statistics';
-import stats from '../src/statisticalData.json';
+import statisticalData from '../src/statisticalData.json';
 
 import FriendList from './components/FriendList/FriendList';
 import friends from '../src/friends';
@@ -15,21 +15,17 @@ function App() {
   return (
       <div className={style.App}>
         <>
-            <Profile 
-            avatar = {user.avatar}
-            name = {user.name}
-            tag = {user.tag}
-            location = {user.location}
-            followers = {user.stats.followers}
-            views = {user.stats.views}
-            likes = {user.stats.likes}
+        <Profile
+          name={user.name}
+          tag={user.tag}
+          location = {user.location}
+          avatar = {user.avatar}
+          stats={ user.stats }
             />
         </>
 
         <>
-        <Statistics
-            stats = {stats}
-          />
+        <Statistics title="Upload stats" stats={statisticalData} />
         </>
 
         <>

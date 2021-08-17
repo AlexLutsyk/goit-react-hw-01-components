@@ -5,7 +5,7 @@ import s from './FriendItems.module.css';
 function FriendItems({ status, avatar, name, isOnline }) {
   return (
     <>
-      <span className={isOnline ? s.online : s.offline}></span>
+      <span className={isOnline ? s.online : s.offline} />
       <img className={s.avatar} src={avatar} alt="avatar" width="48" />
       <p className={s.name}>{name}</p>
     </>
