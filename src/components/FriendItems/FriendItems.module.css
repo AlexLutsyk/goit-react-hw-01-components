@@ -19,3 +19,19 @@
 .name {
   font-weight: 700;
 }
+
+.item {
+  display: flex;
+  align-items: center;
+  padding: 10px 40px;
+  min-width: 300px;
+  border: 1px solid #d4d4d4;
+  border-radius: 4px;
+  -webkit-box-shadow: 8px 8px 8px 0px rgba(50, 162, 212, 0.2);
+  -moz-box-shadow: 8px 8px 8px 0px rgba(50, 162, 212, 0.2);
+  box-shadow: 8px 8px 8px 0px rgba(50, 162, 212, 0.2);
+}
+
+.item:not(:first-child) {
+  margin-top: 20px;
+}

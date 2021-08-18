@@ -14,7 +14,6 @@ import transactions from '../src/transactions.json';
 function App() {
   return (
       <div className={style.App}>
-        <>
         <Profile
           name={user.name}
           tag={user.tag}
@@ -22,23 +21,17 @@ function App() {
           avatar = {user.avatar}
           stats={ user.stats }
             />
-        </>
 
-        <>
         <Statistics title="Upload stats" stats={statisticalData} />
-        </>
 
-        <>
         <FriendList 
         friends = {friends}
         />
-      </>
-      
-      <>
+
         <TransactionHistory
           transactions={ transactions}
         />
-      </>
+      
       </div>
   );
 }
